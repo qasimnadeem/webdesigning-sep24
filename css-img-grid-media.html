@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.gallery {
+	
+    min-height: 500px;
+    width: 90%;
+    
+    background-color: ghostwhite;
+    margin: auto;
+
+	
+}
+
+.gallery img{ max-width: 100%;}
+
+
+@media screen and (max-width: 500px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto auto auto;
+    }
+}
+@media screen and (min-width: 501px) and (max-width:800px)  {
+    .gallery {
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    .gallery {
+        display: grid;
+        grid-template-columns: auto auto auto auto;
+        grid-template-rows: auto auto auto;
+    }
+}
+
+
+</style>
+</head>
+<body>
+<div class="gallery">
+    
+        <div><img src="images/khadi1.webp"></div>
+        <div><img src="images/khadi2.webp"></div>
+        <div><img src="images/khadi4.webp"></div>
+        <div><img src="images/khadi3.jpg"></div>
+
+        <div><img src="images/khadi4.webp"></div>
+        <div><img src="images/khadi1.webp"></div>
+        <div><img src="images/khadi3.jpg"></div>
+        <div><img src="images/khadi2.webp"></div>
+
+        <div><img src="images/khadi4.webp"></div>
+        <div><img src="images/khadi1.webp"></div>
+        <div><img src="images/khadi3.jpg"></div>
+        <div><img src="images/khadi2.webp"></div>
+        
+        
+    
+</div>
+
+</body>
+</html>

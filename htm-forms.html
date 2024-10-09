@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="process.php" method="get">
+        <label>Username<span style="color:red">*</span></label><br>
+        <input type="text" name="username" required placeholder="Username"><br><br>
+        <label>Password</label><br>
+        <input type="password" name="userpw" placeholder="Password"><br><br>
+        <select name="city">
+            <option></option>
+            <option>Lahore</option>
+            <option>Karachi</option>
+            <option>Faisalabad</option>
+        </select><br><br>
+        <input type="text" list="city">
+        <datalist id="city">
+            <option>Lahore</option>
+            <option>Karachi</option>
+            <option>Faisalabad</option>
+        </datalist><br><br>
+        <input type="date"><br><br>
+        <input type="time"><br><br>
+        <input type="color"><br><br>
+        <input type="number"><br><br>
+        <input type="file"><br><br>
+        <input type="checkbox">CNIC
+        <input type="checkbox">Passport<br><br>
+        <fieldset>
+            <legend>Gender</legend>
+            <input type="radio" name="gender">Male
+            <input type="radio" name="gender">Female
+        </fieldset><br><br>
+        <textarea rows="5" cols="50"></textarea><br><br>
+        <input type="submit" value="Signin">
+    </form>
+
+</body>
+</html>

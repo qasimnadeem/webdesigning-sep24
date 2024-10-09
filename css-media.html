@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+@media print{
+    #leftsidebar {display:none;}
+    #prnt {display:none;}
+
+}
+.wrapper {overflow:auto;}
+#main {margin-left: 4px;}
+#leftsidebar {float: none;width: auto;}
+#menulist {margin:0;padding:0;}
+.menuitem {
+    background:orange;
+    border:1px solid #d4d4d4;
+    border-radius:4px;
+    list-style-type:none;
+    margin:4px;
+    padding:2px;
+    cursor: pointer;
+}
+@media screen and (min-width: 480px) {
+    #leftsidebar {width:200px;float:right;}
+    #main {margin-right:216px;} 
+    .menuitem { background:red;}
+}
+@media screen and (min-width: 600px) and (max-width:700px)  {
+    #leftsidebar {display:none;}
+    #main {margin-left:0px;}
+}
+@media screen and (min-width: 701px) {
+    #leftsidebar {width:200px;float:left;}
+    #main {margin-left:216px;} 
+    .menuitem { background:orange;}
+}
+
+</style>
+</head>
+<body>
+<div class="wrapper">
+    <div id="leftsidebar">
+        <ul id="menulist">
+            <li class="menuitem">Menu-item 1</li>
+            <li class="menuitem">Menu-item 2</li>
+            <li class="menuitem">Menu-item 3</li>
+            <li class="menuitem">Menu-item 4</li>
+            <li class="menuitem">Menu-item 5</li>
+        </ul>
+    </div>
+    <div id="main">
+        <h1>Resize the browser window to see the effect!</h1>
+        <p>This example shows a menu that will float to the left of the page if the viewport is 480 pixels wide
+        or wider. If the viewport is less than 480 pixels, the menu will be on top of the content.</p>
+        <br><button id="prnt" onclick="window.print()">Print</button>
+    </div>
+    
+</div>
+</body>
+</html>

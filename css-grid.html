@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-template-rows: auto 100px 120px;
+  grid-gap: 20px;
+  
+  background-color:orange;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgba(101, 103, 139, 0.33);
+  border: 1px solid black;
+  text-align: center;
+  font-size: 30px;
+  overflow: auto;
+}
+</style>
+</head>
+<body>
+
+<h1>Grid Container</h1>
+
+<p>A Grid Container consists of grid items arranged in columns and rows</p>
+
+<div class="grid-container">
+  <div>
+    <iframe src="videos/how-to-create-stock-photos.mp4" width="100%" frameborder="0" height="200"></iframe>
+  </div>
+  <div>
+    <iframe src="videos/how-to-create-stock-photos.mp4" width="100%" frameborder="0" height="200"></iframe>
+  </div>
+  <div>
+    <iframe src="videos/how-to-create-stock-photos.mp4" width="100%" frameborder="0" height="200"></iframe>
+  </div>  
+  <div>
+    <iframe src="videos/how-to-create-stock-photos.mp4" width="100%" frameborder="0" height="200"></iframe>
+  </div>
+  <div>5</div>
+  <div>6</div>
+  <div>7</div>
+  <div>8</div>
+  
+</div>
+
+
+
+<p>Direct child elements(s) of the grid container automatically becomes grid items.</p>
+
+</body>
+</html>
